@@ -1,8 +1,8 @@
 /* 
-  AI disclosure: ChatGPT was used to help recall D3 syntax, debug errors, and 
-  draft portions of the layout and position logic for all displays, though ChatGPT
-  was used more for the alluvial display due to the more complex layout logic.
-  I reviewed, adapted, and integrated the code myself.
+    AI disclosure: ChatGPT was used to help recall D3 syntax, debug errors, and 
+    draft portions of the layout and position logic for all displays, though ChatGPT
+    was used more for the alluvial display due to the more complex layout logic.
+    I reviewed, adapted, and integrated the code myself.
 */
 
 const width = window.innerWidth;
@@ -535,6 +535,10 @@ function drawDonut(data) {
     drawBurdenLegend(panel, donutPanel.width - 142, 76, true);
 }
 
+/*
+    Rationale: shows how specific indicators vary by academic year. The line chart looks at indicators individually instead of
+    as an aggregate.
+*/
 function drawLineChart(data) {
     const panel = addPanel(
         linePanel,
